@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --maincolor: #0F5380;
+    --secondmaincolor: #F6F6F6;
+    --formcolor: #2C2C2C;
+    --p-color: #F9F9F9;
+    --whitecolor: #ffff;
+}
+
+body {
+    font-family: assistent;
+
+}
+
+.container-11 {
+    max-width: 1920px;
+    min-height: 520px;
+    background-image: url(img/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 10px;
+    object-fit: contain;
+}
+
+.head-1,
+.para {
+
+    transform: rotate(-180deg);
+}
+
+.head-1 {
+    color: var(--whitecolor);
+
+}
+
+.para {
+    color: var(--p-color);
+}
+
+
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.form-control {
+    font-weight: 200;
+}
+
+
+#fullname,
+#email {
+    background-color: var(--secondmaincolor);
+    box-shadow: 0px 4px 0px var(--maincolor);
+    border-style: none;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+.btn {
+
+    color: var(--whitecolor);
+    background: var(--maincolor);
+    font-weight: bold;
+    margin-top: 30px;
+    max-width: 130px;
+    font-family: assistent;
+    font-size: 1rem;
+    margin-right: 20px;
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+@media screen and (min-width:321px) and (max-width:1070px) {
+
+    .container-11 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 500px;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 300px;
+        place-items: center;
+        margin-top: 5px;
+        gap: 2.25rem;
+
+    }
+
+    .col-lg-3 {
+        width: 100%;
+
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .container-11 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 400px;
+        gap: 1.25rem;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 320px;
+        place-items: center;
+        margin-top: 5px;
+        margin-right: 100px;
+        gap: 1.25rem;
+
+
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+
+
+    }
+
+    .btn {
+        position: absolute;
+        transform: translate(50px, 100px);
+    }
+
+    #fullname,
+    #email {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        max-width: 200px;
+    }
+
+    .para {
+        max-width: 200px;
+
+    }
+}
