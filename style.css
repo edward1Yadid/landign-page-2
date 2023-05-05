@@ -142,6 +142,7 @@ label {
 
     .btn {
         max-width: 276px;
+        margin-right: 0;
     }
 }
 
