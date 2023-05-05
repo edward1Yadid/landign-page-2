@@ -131,12 +131,17 @@ label {
         align-items: center;
 
 
+
     }
 
     h1 {
         font-size: 3rem;
         font-weight: bold;
 
+    }
+
+    .btn {
+        max-width: 276px;
     }
 }
 
@@ -156,38 +161,49 @@ label {
         grid-template-columns: 320px;
         place-items: center;
         margin-top: 5px;
-        margin-right: 100px;
         gap: 1.25rem;
-
-
+        margin: 0;
     }
 
-    .form-control {
+
+    .form-control,
+    .btn {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 200px;
+        justify-content: center;
+
 
 
     }
 
     .btn {
         position: absolute;
-        transform: translate(50px, 100px);
+        transform: translate(10px, 100px);
+        min-width: 296px;
+
     }
+
 
     #fullname,
     #email {
         text-align: center;
+        min-width: 250px;
+
     }
 
     h1 {
-        font-size: 2rem;
-        max-width: 200px;
+        font-size: 1.5rem;
+        min-width: 250px;
     }
 
     .para {
-        max-width: 200px;
+        min-width: 250px;
+        text-align: center;
 
     }
+
+
+
+
 }
