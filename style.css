@@ -16,15 +16,11 @@ body {
 
 }
 
-.container-11 {
+.container {
     max-width: 1920px;
     min-height: 520px;
-    background-image: url(img//leading-Img.jpg);
-    background-position: center;
-    background-size: cover;
     transform: rotate(180deg);
     clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
-    background-blend-mode: multiply;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +28,10 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     object-fit: contain;
+
 }
+
+
 
 .head-1,
 .para {
@@ -206,5 +205,41 @@ label {
 
 
 
+
+}
+
+#lavaRain {
+    position: relative;
+    background-color: #0F5380;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.rain {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    background-image: url(./img/lavaRain.jpg);
+    animation: rain 1s linear infinite;
+}
+
+@keyframes rain {
+
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+
+    }
+
+    100% {
+        transform: translateY(1500%);
+    }
 
 }
